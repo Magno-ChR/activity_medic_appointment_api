@@ -1,0 +1,6 @@
+@activity_medic_appointment_api_HostAddress = http://localhost:5050
+
+GET {{activity_medic_appointment_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
