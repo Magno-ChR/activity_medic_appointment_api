@@ -1,0 +1,17 @@
+﻿using activity_medic_appointment_api.Business;
+using Microsoft.AspNetCore.Mvc;
+
+namespace activity_medic_appointment_api.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class NotificacionesController : ControllerBase
+    {
+        private readonly INotificacion notificacion;
+
+        public NotificacionesController(INotificacion notificacion)
+        {
+            this.notificacion = notificacion;
+        }
+    }
+}

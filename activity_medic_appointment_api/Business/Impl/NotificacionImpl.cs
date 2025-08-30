@@ -10,5 +10,24 @@ namespace activity_medic_appointment_api.Business.Impl
         {
             this.sendNotification = sendNotification;
         }
+
+        private void Send(string message, int userId)
+        {
+            switch (NotificationRegister(message, userId))
+            {
+                case 1:
+                    sendNotification.SendEmail();
+                    break;
+                default:
+
+                    break;
+            }
+            
+        }
+
+        private int NotificationRegister(string message, int userId)
+        {
+            return 1;
+        }
     }
 }

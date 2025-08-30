@@ -1,6 +1,6 @@
 ﻿namespace activity_medic_appointment_api.Business.Impl
 {
-    public class DiagnosticoImpl : IDiagnostico
+    public class EspecialidadImpl : IEspecialidad
     {
     }
 }

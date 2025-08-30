@@ -2,5 +2,6 @@
 {
     public interface ISendNotification
     {
+        void SendEmail();
     }
 }
